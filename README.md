@@ -1,2 +1,2 @@
 # LWComponents
- LWCs feitos por mim
+ LWCs done to my company
