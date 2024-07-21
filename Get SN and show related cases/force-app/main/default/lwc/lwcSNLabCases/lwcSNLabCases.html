@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Casos relacionados com mesmo número de série"><br/>     
+        <div if:true={records}>
+            <lightning-datatable 
+                key-field="Id"
+                data={records}
+                columns={columns}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
