@@ -1,0 +1,21 @@
+<template>
+   <lightning-card title="Salesforce GPT" icon-name="standard:einstein_replies">
+<div class="slds-card header slds-grid">
+</div>
+   <div class="slds-text-align_center" style="text-align:center; margin: 20px">
+    <lightning-input type="string" value={question} onchange={handleOnChange}></lightning-input>
+   </div> 
+
+   <div class="slds-text-align_center" style="text-align:center">
+    <lightning-button class="slds-button" variant="brand" label="Go!" title="Search" onclick={handleOnClick}></lightning-button>
+   </div>
+
+<div if:true={isLoaded} class="slds-card_body" style="text-align: justify; margin: 20px;">{message}</div>
+<div if:false={isLoaded} class="slds-card_body">
+    <lightning-spinner alternative-text="Loading..." variant="brand"></lightning-spinner>
+</div>
+   </lightning-card> 
+   <article class="slds-card" title="Chat GPT">
+
+   </article>
+</template>
