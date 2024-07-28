@@ -1,4 +1,4 @@
- ![LWC](https://github.com/user-attachments/assets/ef8cf11d-fd16-4ec9-8da9-3d06d246a5ad)
+![LWC-Photoroom](https://github.com/user-attachments/assets/3627f723-5497-4890-b10a-33655aae6494)
 # Salesforce Lightning Web Components
 ---
 ### LWC with Apex Classes
