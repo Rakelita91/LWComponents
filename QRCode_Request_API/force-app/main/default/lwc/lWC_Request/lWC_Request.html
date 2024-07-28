@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="Geração etiqueta de identificação">
+        <div class="slds-align_absolute-center">
+            <lightning-button label={toggleButtonLabel} title="Toggle content action" icon-name={toggleIconName} onclick={getInfo}></lightning-button></div>
+           
+        </lightning-card>
+  
+        <lightning-card title="" class="pdf">
+            <div class="pdfdiv" id="pdfdiv">
+           
+              <div class="logo">
+                <lightning-layout>
+                    <lightning-layout-item padding="horizontal-medium">
+                        <div class="slds-text-align_center" style="height:50px;width:140px"><img class="Logo1" src={Image1}/></div>
+                    </lightning-layout-item>
+        
+                    <lightning-layout-item alignment-bump="left" padding="horizontal-medium">
+                        <div class="slds-text-align_center" style="height:50px;width:140px"><img class="Logo2" src={Image2}/></div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </div>
+
+        <div class="info">
+            <lightning-layout>
+                <lightning-layout-item padding="horizontal-medium">
+                        <h1><strong>Case Number: </strong>{myInfo}</h1>
+                        <h1><strong>Product Model:</strong> {myInfo2}</h1>
+                        <h1><strong>Serial Number:</strong> {myInfo3}</h1>
+                        <h1><strong>Ticket:</strong> {myInfo4}</h1>   
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+
+        <div class="slds-align_absolute-center">
+        <div class="qrcode2" id="qrcode2" style="height: 120px;width:120px;text-align:center"></div></div>
+
+    </div>
+    </lightning-card>
+    
+    <lightning-card title="">
+        <div class="slds-align_absolute-center">
+        <lightning-button label="Imprimir (Não funciona)" onclick={imprimirContenido}></lightning-button>
+    </div>
+    </lightning-card>
+</template>   
